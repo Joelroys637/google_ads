@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .intro {
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        .tutorial {
+            background: #e2eafc;
+        }
+
+        .about {
+            background: #fce2e2;
+            text-align: center;
+        }
+
+        .file-upload {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .file-upload input[type="file"] {
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Tutorial Website</h1>
+    </header>
+    <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#tutorial">Tutorial</a>
+        <a href="#about">About</a>
+    </nav>
+    <section id="intro" class="intro">
+        <h2>Introduction</h2>
+        <p>This website offers a seamless learning experience. Explore tutorials, upload and download resources, and learn more about us.</p>
+    </section>
+    <section id="tutorial" class="tutorial">
+        <h2>Tutorial</h2>
+        <div class="file-upload">
+            <form action="" method="post" enctype="multipart/form-data">
+                <label for="pdf-upload">Upload a PDF:</label>
+                <input type="file" id="pdf-upload" name="pdf-upload" accept=".pdf">
+                <button type="submit">Upload</button>
+            </form>
+            <div style="margin-top: 1rem;">
+                <a href="sample.pdf" download>
+                    <button>Download Sample PDF</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>This website is designed to make learning interactive and engaging. We provide tutorials, resources, and a platform to enhance your knowledge.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Tutorial Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
